@@ -1,0 +1,24 @@
+/*
+Creator: Brett Schrimppf
+Date :1/18
+Last revision:
+ */
+ body {
+     background-color:  #68d5d7;
+ }
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;    
+}
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav a:visited {
+    color: #3c474b; 
+}
+nav a:hover {
+    font-weight: bold;
+}
+nav a:active {
+    text-decoration: none;
+}

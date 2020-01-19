@@ -6,7 +6,28 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Big House of Food!</title>	
+        <title>Big House of Food!</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-color: #4f7cac;
+            }
+            h2 {
+                font-size: 200%;
+            }
+            table {
+                max-width: 50%;
+                min-width: 30%;
+                margin: left;
+            }
+            table, th, td {
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            tr:nth-child(odd){
+                background-color: #68d5d7;
+            }
+        </style>	
     </head> 
     
     <body>
@@ -78,6 +99,28 @@
                 <p>$7.95</p>
             </article>
         </section>
+
+        <table>
+            <h2>
+                Beverages
+            </h2>
+            <tr>
+                <td>Root Beer</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Bottled Water</td>
+                <td>$1.25</td>
+            </tr>
+            <tr>
+                <td>Lemonade</td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Iced Tea</td>
+                <td>$1.25</td>
+            </tr>
+        </table>
 
 
         <footer>
