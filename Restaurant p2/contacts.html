@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<!--
+  Name: Brett Schrimpf
+    Date Created: 1/15
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Big House of Food!</title>	
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <style>
+            form {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Big House of Food</h1>
+        </header>
+
+        <nav>
+        <hr>
+            <p><a href = "index.html">Home</a></p>
+            <p><a href = "menu.html">Menu</a></p>
+            <p><a href = "contacts.html">Contact Us</a></p>
+            <hr>
+        </nav>
+
+        <form action = "submit.html" method = "POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"> <br /><br />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"> <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"> <br /><br />
+
+            <label for="contact">Reason for inquiry</label>
+            <select id="contact" name="contact">
+                <option value="default" selected>Catering</option>
+                <option value="private pary">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <br />
+            <br />
+
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info"></textarea><br/><br/>
+
+            Have you been to our restaurant?
+
+            <input type="radio" name="answer" value="YES" checked />Yes
+            <input type="radio" name="answer" value="NO" />No<br /> <br/>
+
+            Best days to contact you: 
+
+            <input type="checkbox" name="myChoices" value="monday"/>M
+            <input type="checkbox" name="myChoices" value="tuesday"/>T
+            <input type="checkbox" name="myChoices" value="wednesday" />W
+            <input type="checkbox" name="myChoices" value="thursday"/>Th
+            <input type="checkbox" name="myChoices" value="friday"/>F
+            <br/><br/>
+
+            <input type="submit" name="submit" value="Send Request">
+
+            </form>
+
+            <footer>
+                <hr>
+                <p>123 Fake Street, Cool City, Minnesota, 12345</p>
+                <p>(123)-456-7890</p>
+            </footer>
+    </body> 
+</html
