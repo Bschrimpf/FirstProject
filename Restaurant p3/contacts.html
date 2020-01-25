@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<!--
+  Name: Brett Schrimpf
+    Date Created: 1/15
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Big House of Food!</title>
+        <script type="text/JavaScript" src="restaurant.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 	
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        
+        <style>
+            form {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            nav {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }    
+            
+            nav .btn {
+                background-color: #5b7d87;
+                color: #fef9ff; 
+            }
+            
+            nav .btn:hover {
+                font-weight: bold;
+            } 
+        </style>
+    </head> 
+    
+    <body>
+        <div class="container">
+        <header>
+            <h1>Big House of Food</h1>
+            
+        </header>
+
+        <nav>
+        <hr>
+        <p><a class="btn badge-pill"  href = "index.html">Home<i class="fas fa-home"></i></a></p>
+            <p><a class="btn badge-pill" href = "menu.html">Menu</a class="btn badge-pill"></p>
+            <p><a class="btn badge-pill" href = "contacts.html">Contact Us</a class="btn badge-pill"></p>
+            <hr>
+        </nav>
+
+        <form name= "contacts" onsubmit="return validateItems();">
+            <div class = "form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name"> 
+            </div>
+            <div class = "form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control"  id="email" name="email"> 
+            </div>
+            <div class = "form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control"  id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Reason for inquiry</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Catering</option>
+                  <option>Private Party</option>
+                  <option>Feedback</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Additional Information (optional)</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+            Have you been to our restaurant?
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                <label class="form-check-label" for="exampleRadios2">
+                  No
+                </label>
+              </div>
+            
+            Best days to contact you (optional): 
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  M
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  T
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  W
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck4">
+                  Th
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                <label class="form-check-label" for="defaultCheck5">
+                  F
+                </label>
+              </div>
+
+            <button type="submit" value ="Submit" id="submitButton" class="btn btn-default">Submit</button>
+            </form>
+            <footer>
+                <hr>
+                <p>123 Fake Street, Cool City, Minnesota, 12345</p>
+                <p>(123)-456-7890</p>
+            </footer>
+            </div>
+    </body> 
+</html
